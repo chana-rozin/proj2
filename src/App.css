@@ -1,5 +1,21 @@
 .App {
   text-align: center;
+  height: 100%;
+}
+
+nav{
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 20px;
+  height: 10rem;
+  background-color: #282c34;
+  font-size: large;
+}
+
+nav Link{
+  color: white;
+  text-decoration: none;
 }
 
 .App-logo {
@@ -36,3 +52,5 @@
     transform: rotate(360deg);
   }
 }
+
+
