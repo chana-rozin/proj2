@@ -53,4 +53,21 @@ nav Link{
   }
 }
 
+nav{
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
+  padding: 20px;
+  height: 10rem;
+  background-color: #282c34;
+  font-size: large;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 900;
+}
+
 
