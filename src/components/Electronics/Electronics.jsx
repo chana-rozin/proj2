@@ -6,7 +6,9 @@ import { getElectronics } from '../../service/store';
 function Electronics() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    getElectronics().then(data => setProducts(data));
+    const getData = async()=>{setProducts(await getElectronics())};
+    getData();
+    // getElectronics().then(data => setProducts(data));
   }, []);
   return (
     <ProdArea products={products} />

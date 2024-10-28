@@ -6,7 +6,9 @@ import { getJewelry } from '../../service/store';
 function Jewelry() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    getJewelry().then(data=>setProducts(data));
+    const getData = async()=>{setProducts(await getJewelry())};
+    getData();
+    // getJewelry().then(data=>setProducts(data));
   }, []);
   return (
     <ProdArea products={products} />
